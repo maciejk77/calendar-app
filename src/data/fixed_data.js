@@ -1,3 +1,5 @@
+// more structured data, to be used on next iteration of the app
+
 const data = {
     calendar: [ 
       {'day':28, 'event': 'PUBLIC'}, {'day':29}, {'day':30}, {'day': 31}, {'day':1}, {'day':2}, {'day':3}, 

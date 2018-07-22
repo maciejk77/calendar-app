@@ -11,34 +11,101 @@ class App extends Component {
       // weekdays: fixed_data.data.weekdays,
       // people: fixed_data.data.people
       calendar: [ 
-        {'day':28, 'event': 'PUBLIC'}, {'day':29}, {'day':30}, {'day': 31}, {'day':1}, {'day':2}, {'day':3}, 
-        {'day':4, 'event': 'TODAY'}, {'day':5}, {'day':6}, {'day':7, 'event': 'C.HOLIDAY'}, {'day':8, 'event': 'C.HOLIDAY'}, 
-        {'day':9, 'event': 'C.HOLIDAY'}, {'day':10}, 
-        {'day':11}, {'day':12}, {'day':13}, {'day':14}, {'day':15}, {'day':16}, {'day':17}, 
-        {'day':18}, {'day':19}, {'day':20}, {'day':21}, {'day':22}, {'day':23}, {'day':24}, 
-        {'day':25}, {'day':26}, {'day':27}, {'day':28}, {'day':29}, {'day':30}, {'day': 1}
+        {'day':28, 'event': 'PUBLIC', 
+          people: [
+            {'name': 'BG', colour: 'green', label: false, status: 'finish'}, 
+            {'name': 'DB', colour: 'blue', label: false, status: 'continues'} 
+          ]
+        },       
+        {'day':29, 
+          people: [
+            {name: 'DB', colour: 'blue', label: false, continues: false}, 
+          ]
+        }, 
+        {day: 30}, {day: 31}, {day: 1}, {day: 2}, {day :3},         
+        {day: 4, event: 'TODAY', 
+          people: [
+            {name: 'SK', colour: 'red', label: true, continues: false }, 
+            {name: 'MW', colour: 'cyan', label: true, continues: false} 
+          ]
+        },
+        {day: 5}, {day: 6}, {day: 7, event: 'C.HOLIDAY'}, {day: 8, event: 'C.HOLIDAY'}, 
+        {day: 9, event: 'C.HOLIDAY'}, {day: 10}, {day: 11}, {day: 12}, {day: 13}, {day: 14}, 
+        {day: 15}, {day: 16}, {day: 17}, 
+        {day: 18,
+          people: [
+            {name: 'DB', colour: 'blue', label: true, continues: true}, 
+          ]
+        }, 
+        {'day':19,
+          people: [
+            {name: 'DB', colour: 'blue', label: false, continues: true}, 
+          ]
+        }, 
+        {'day':20,
+          people: [
+            {name: 'DB', colour: 'blue', label: false, continues: true}, 
+          ]
+        }, 
+        {'day':21,
+          people: [
+            {name: 'DB', colour: 'blue', label: false, continues: true}, 
+          ]
+        }, 
+        {'day':22,
+          people: [
+            {name: 'DB', colour: 'blue', label: false, continues: true}, 
+          ]
+        }, 
+        {'day':23}, 
+        {'day':24}, 
+        
+        {'day':25,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: true}
+          ]
+        }, 
+        {'day':26,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: true}
+          ]
+        }, 
+        {'day':27,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: true}
+          ]
+        }, 
+        {'day':28,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: false}
+          ]
+        }, 
+        {'day':29, 
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: true}
+          ]
+        }, 
+        {'day':30,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true}
+          ]
+        }, 
+        {'day': 1,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: false}
+          ]
+        }
       ],
       weekdays: [
-        {'day': 'Monday', 'is_weekend': false}, {'day': 'Tuesday', 'is_weekend': false}, 
-        {'day': 'Wednesday', 'is_weekend': false}, {'day': 'Thursday', 'is_weekend': false}, 
-        {'day': 'Friday', 'is_weekend': false}, 
-        {'day': 'Saturday', 'is_weekend': true}, {'day': 'Sunday', 'is_weekend': true}
-      ],
-      people: [
-        { 'name': 'SK', 'colour': 'orange', days: [{'day': 1, 'finish': true, 'label': 'SK' }] },
-        { 'name': 'MW', 'colour': 'red', days: [{'day': 1, 'finish': true, 'label': 'MW' }] },
-        { 'name': 'BG', 'colour': 'green', 
-          days: [
-            {'day': 28, 'finish': true}, {'day': 26, 'label': 'BG'}, {'day': 27}, 
-            {'day': 28}, {'day': 29}, {'day': 30}, {'day': 1, 'finish': true},
-          ]   
-        },
-        { 'name': 'DB', 'colour': 'blue', 
-          days: [
-            {'day': 28, 'finish': true}, {'day': 26, 'label': 'BG'}, {'day': 27}, 
-            {'day': 28}, {'day': 29}, {'day': 30}, {'day': 1, 'finish': true},
-          ]   
-        }
+        {'day': 'MON', 'is_weekend': false}, {'day': 'TUE', 'is_weekend': false}, 
+        {'day': 'WED', 'is_weekend': false}, {'day': 'THU', 'is_weekend': false}, 
+        {'day': 'FRI', 'is_weekend': false}, 
+        {'day': 'SAT', 'is_weekend': true}, {'day': 'SUN', 'is_weekend': true}
       ]
     }
   }
