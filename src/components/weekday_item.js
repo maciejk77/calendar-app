@@ -5,7 +5,7 @@ const WeekdayItem = (props) => {
   return (
     <div className="weekday_item">
       <div>{props.day}</div>
-      <div>{props.is_weekend ? "Free" : "Work"}</div>
+      <div>{props.is_weekend ? "free" : "work"}</div>
     </div>
   )
 }

@@ -12,7 +12,8 @@ class Calendar extends Component {
       <div key={`calendar_item-${ind}`}>
         <CalendarItem
         day={item.day}
-        event={item.event} 
+        event={item.event}
+        people={this.props.people} 
         />
       </div>
     )
@@ -25,6 +26,7 @@ class Calendar extends Component {
         <WeekdayItem
         day={item.day}
         is_weekend={item.is_weekend} 
+        people={this.props.people} 
         />
       </div>
     )

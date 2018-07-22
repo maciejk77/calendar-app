@@ -49,6 +49,7 @@ class App extends Component {
         <Calendar 
           calendar={this.state.calendar}  
           weekdays={this.state.weekdays}
+          people={this.state.people}
         />
       </div>
     );

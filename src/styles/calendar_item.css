@@ -1,15 +1,18 @@
 .calendar_item {
-  border: 1px solid green;
+  border: 1px solid black;
   margin: 2px;
   width: 140px;
   height: 140px; }
+  .calendar_item--highlighted {
+    border-color: greenyellow; }
 
 .top-bar {
   border: 2px dotted chocolate;
   margin: 2px;
   display: flex;
   justify-content: space-between;
-  padding: .1rem; }
+  padding: .1rem;
+  height: 20px; }
 
 .bottom-box {
   border: 2px dashed black;
