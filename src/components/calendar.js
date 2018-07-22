@@ -8,10 +8,11 @@ class Calendar extends Component {
 
   render_calendar() {
     if(!this.props) { return null };
-    return this.props.calendar.map( item =>
-      <div>
+    return this.props.calendar.map( (item, ind) =>
+      <div key={`calendar_item-${ind}`}>
         <CalendarItem
-        day={item.day} 
+        day={item.day}
+        event={item.event} 
         />
       </div>
     )
@@ -19,10 +20,11 @@ class Calendar extends Component {
 
   render_weekdays() {
     if(!this.props) { return null };
-    return this.props.weekdays.map( item =>
-      <div>
+    return this.props.weekdays.map( (item, ind) =>
+      <div key={`weekdays_item-${ind}`}>
         <WeekdayItem
-        day={item.day} 
+        day={item.day}
+        is_weekend={item.is_weekend} 
         />
       </div>
     )
