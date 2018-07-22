@@ -23,7 +23,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{border: "2px solid red", padding: "2px", margin: "10px 0"}}>
+      <div style={{border: "2px dotted gray", padding: "2px", margin: "10px 0"}}>
         <Calendar 
           calendar={this.state.calendar}  
           weekdays={this.state.weekdays}
