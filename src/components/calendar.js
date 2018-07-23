@@ -31,6 +31,7 @@ class Calendar extends Component {
   }
 
   render() {
+    debugger
     return (
       <div>
         <div className="weekdays">

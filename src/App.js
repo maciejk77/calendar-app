@@ -37,75 +37,84 @@ class App extends Component {
             {name: 'DB', colour: 'blue', label: true, continues: true}, 
           ]
         }, 
-        {'day':19,
+        {day: 19,
           people: [
             {name: 'DB', colour: 'blue', label: false, continues: true}, 
           ]
         }, 
-        {'day':20,
+        {day: 20,
           people: [
             {name: 'DB', colour: 'blue', label: false, continues: true}, 
           ]
         }, 
-        {'day':21,
+        {day: 21,
           people: [
             {name: 'DB', colour: 'blue', label: false, continues: true}, 
           ]
         }, 
-        {'day':22,
+        {day: 22,
           people: [
             {name: 'DB', colour: 'blue', label: false, continues: true}, 
           ]
         }, 
-        {'day':23}, 
-        {'day':24}, 
-        
-        {'day':25,
+        {day: 23,
+          people: [
+            {name: 'BG', colour: 'green', label: true, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: true}
+          ]
+        }, 
+        {day: 24,
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true},
             {name: 'DB', colour: 'blue', label: false, continues: true}
           ]
         }, 
-        {'day':26,
+        {day: 25,
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true},
             {name: 'DB', colour: 'blue', label: false, continues: true}
           ]
         }, 
-        {'day':27,
+        {day: 26,
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true},
             {name: 'DB', colour: 'blue', label: false, continues: true}
           ]
         }, 
-        {'day':28,
+        {day: 27,
+          people: [
+            {name: 'BG', colour: 'green', label: false, continues: true},
+            {name: 'DB', colour: 'blue', label: false, continues: true}
+          ]
+        }, 
+        {day: 28,
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true},
             {name: 'DB', colour: 'blue', label: false, continues: false}
           ]
         }, 
-        {'day':29, 
+        {day: 29, 
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true},
             {name: 'DB', colour: 'blue', label: false, continues: true}
           ]
         }, 
-        {'day':30,
+        {day: 30,
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true}
           ]
         }, 
-        {'day': 1,
+        {day: 1,
           people: [
             {name: 'BG', colour: 'green', label: false, continues: false}
           ]
         }
       ],
       weekdays: [
-        {'day': 'MON', 'is_weekend': false}, {'day': 'TUE', 'is_weekend': false}, 
-        {'day': 'WED', 'is_weekend': false}, {'day': 'THU', 'is_weekend': false}, 
-        {'day': 'FRI', 'is_weekend': false}, 
-        {'day': 'SAT', 'is_weekend': true}, {'day': 'SUN', 'is_weekend': true}
+        {day: 'MON', is_weekend: false}, {day: 'TUE', is_weekend: false}, 
+        {day: 'WED', is_weekend: false}, {day: 'THU', is_weekend: false}, 
+        {day: 'FRI', is_weekend: false}, 
+        {day: 'SAT', is_weekend: true}, {day: 'SUN', is_weekend: true}
       ]
     }
   }
