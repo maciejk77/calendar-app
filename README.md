@@ -38,3 +38,6 @@ My approach was based on a few assumptions:
 
 ## Screenshot
 ![Screenshot](public/screenshot.png)
+
+## Requested final output as per below
+![Screenshot](public/end_result.png)
