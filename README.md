@@ -37,4 +37,8 @@ My approach was based on a few assumptions:
 - Deploy to Heroku
 
 ## Screenshot
+First app completed
 ![Screenshot](public/screenshot.png)
+
+Second version with some styling, work in progress...
+![Screenshot](public/screenshot2.png)
