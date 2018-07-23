@@ -5,7 +5,6 @@ import '../styles/calendar.css';
 import '../styles/weekdays.css';
 
 class Calendar extends Component {
-
   render_calendar() {
     if(!this.props) { return null };
     return this.props.calendar.map( (item, ind) =>
