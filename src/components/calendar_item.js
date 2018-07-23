@@ -11,7 +11,10 @@ class CalendarItem extends Component {
 
         { item.continues &&
           <div style={{color: item.colour }} className="bottom-box__not-finished">
-            {item.label ? item.name : ''} {/* show or not to show initials eg. 'BG' */}
+            
+            <div className={cn({ "bottom-box__label": item.label })}>
+              {item.label ? item.name : ''}
+            </div>
            
               <svg height="15" width="100">
                 {item.label ? item.name : ''}
@@ -22,25 +25,33 @@ class CalendarItem extends Component {
           </div>
         }
 
-        { item.continues === false && // explicitly false as it can also be undefined
-          <div style={{color: item.colour }} className="bottom-box__not-finished">
-            {item.label ? item.name : ''} {/* show or not to show initials eg. 'BG' */}
-            
-            <svg height="15" width="50">
-                {item.label ? item.name : ''}
-                <line x1="0" y1="10" x2="50" y2="10" 
-                style={{stroke: item.colour, strokeWidth: 5}} />
-            </svg>
+         { item.continues === false && // explicitly false as it can also be undefined
+           <div style={{color: item.colour }} className="bottom-box__not-finished">
+          
+            <div className={cn({ "bottom-box__label": item.label })}>
+              {item.label ? item.name : ''}
+            </div>
 
-          </div>
-        }
+             <svg height="15" width="50">
+                 {item.label ? item.name : ''}
+                 <line x1="0" y1="10" x2="50" y2="10" 
+                 style={{stroke: item.colour, strokeWidth: 5}} />
+                 ----------- // default when SVGs are not avaiable for browser
+             <svg height="15" width="50">
+                 <line x1="50" y1="5" x2="50" y2="15" 
+                 style={{stroke: item.colour, strokeWidth: 5}} />
+                 ----| // default when SVGs are not avaiable for browser
+                 </svg>
+             </svg>
+
+           </div>
+         }
         
       </div>
     )
   }
 
   render() {
-    //debugger;
     return (   
       <div className={ cn('calendar_item', {'calendar_item--highlighted': this.props.event === 'TODAY'} )}>
 
@@ -51,8 +62,6 @@ class CalendarItem extends Component {
 
         <div className="bottom-box">
           <div>{this.render_status(this.props.people)}</div>
-          {/* <div className="bottom-box__not-finished">-----------|</div>
-          <div className="bottom-box__finished">----------------------</div> */}
         </div>
       </div>
     )
