@@ -4,6 +4,23 @@ import cn from 'classnames';
 
 class CalendarItem extends Component {
 
+  render_status() {
+    //debugger;
+    return this.props.people.map( (item, index) =>
+      <div key={index}>
+
+        { item.continues &&
+          <div style={{color: item.colour }} className="bottom-box__not-finished">{`${item.label ? item.name : ''}------------------`}</div>
+        }
+
+        { item.continues === false && // explicitly false as it can also be undefined
+          <div style={{color: item.colour }} className="bottom-box__not-finished">{`${item.label ? item.name : ''}--------|`}</div>
+        }
+        
+      </div>
+    )
+  }
+
   render() {
     //debugger;
     return (   
@@ -15,8 +32,9 @@ class CalendarItem extends Component {
         </div>
 
         <div className="bottom-box">
-          <div className="bottom-box__not-finished">-----------|</div>
-          <div className="bottom-box__finished">----------------------</div>
+          <div>{this.render_status(this.props.people)}</div>
+          {/* <div className="bottom-box__not-finished">-----------|</div>
+          <div className="bottom-box__finished">----------------------</div> */}
         </div>
       </div>
     )
