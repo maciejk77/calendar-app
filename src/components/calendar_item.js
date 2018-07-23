@@ -10,11 +10,29 @@ class CalendarItem extends Component {
       <div key={index}>
 
         { item.continues &&
-          <div style={{color: item.colour }} className="bottom-box__not-finished">{`${item.label ? item.name : ''}------------------`}</div>
+          <div style={{color: item.colour }} className="bottom-box__not-finished">
+            {item.label ? item.name : ''} {/* show or not to show initials eg. 'BG' */}
+           
+              <svg height="15" width="100">
+                {item.label ? item.name : ''}
+                <line x1="0" y1="10" x2="100" y2="10" 
+                      style={{stroke: item.colour, strokeWidth: 5}} />
+              </svg>
+    
+          </div>
         }
 
         { item.continues === false && // explicitly false as it can also be undefined
-          <div style={{color: item.colour }} className="bottom-box__not-finished">{`${item.label ? item.name : ''}--------|`}</div>
+          <div style={{color: item.colour }} className="bottom-box__not-finished">
+            {item.label ? item.name : ''} {/* show or not to show initials eg. 'BG' */}
+            
+            <svg height="15" width="50">
+                {item.label ? item.name : ''}
+                <line x1="0" y1="10" x2="50" y2="10" 
+                style={{stroke: item.colour, strokeWidth: 5}} />
+            </svg>
+
+          </div>
         }
         
       </div>

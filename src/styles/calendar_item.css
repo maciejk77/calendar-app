@@ -18,6 +18,5 @@
   border: 2px dashed black;
   margin: 2px;
   padding: .1rem;
-  margin: 5% auto; }
-  .bottom-box__not-finished {
-    font-weight: bold; }
+  margin: 5% auto;
+  font-weight: bold; }

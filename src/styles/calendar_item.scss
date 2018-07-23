@@ -28,11 +28,13 @@
   margin: 2px;
   padding: .1rem;
   margin: 5% auto; 
-
-  &__finished {}
+  font-weight: bold;
+  
+  &__finished {
+    
+  }
 
   &__not-finished {
-    font-weight: bold;
+    
   }
 }
-
