@@ -13,6 +13,7 @@ class Calendar extends Component {
         <CalendarItem
         day={item.day}
         event={item.event}
+        people={item.people}
         />
       </div>
     )
@@ -31,7 +32,6 @@ class Calendar extends Component {
   }
 
   render() {
-    debugger
     return (
       <div>
         <div className="weekdays">

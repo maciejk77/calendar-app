@@ -22,13 +22,15 @@ class App extends Component {
             {name: 'DB', colour: 'blue', label: false, continues: false}, 
           ]
         }, 
-        {day: 30}, {day: 31}, {day: 1}, {day: 2}, {day :3},         
-        {day: 4, event: 'TODAY', 
+        {day: 30}, {day: 31}, 
+        {day: 1,
           people: [
             {name: 'SK', colour: 'red', label: true, continues: false }, 
             {name: 'MW', colour: 'cyan', label: true, continues: false} 
           ]
-        },
+        }, 
+        {day: 2}, {day :3},         
+        {day: 4, event: 'TODAY'},
         {day: 5}, {day: 6}, {day: 7, event: 'C.HOLIDAY'}, {day: 8, event: 'C.HOLIDAY'}, 
         {day: 9, event: 'C.HOLIDAY'}, {day: 10}, {day: 11}, {day: 12}, {day: 13}, {day: 14}, 
         {day: 15}, {day: 16}, {day: 17}, 
@@ -96,7 +98,7 @@ class App extends Component {
         {day: 29, 
           people: [
             {name: 'BG', colour: 'green', label: false, continues: true},
-            {name: 'DB', colour: 'blue', label: false, continues: true}
+            {name: 'DB', colour: 'blue', label: false, continues: false}
           ]
         }, 
         {day: 30,
