@@ -36,7 +36,10 @@ My approach was based on a few assumptions:
 - Adding responsivness, fixed width to 1024px at the moment
 - Deploy to Heroku
 
-## Screenshot
+## Screenshot (completed)
+![Screenshot3](public/screenshot3.png)
+
+## Screenshot (first with borders, not completed)
 ![Screenshot](public/screenshot.png)
 
 ## Requested final output as per below
