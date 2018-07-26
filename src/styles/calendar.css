@@ -1,5 +1,4 @@
 .calendar {
-  border: 2px solid blue;
   display: flex;
   flex-wrap: wrap;
   width: 1024px;

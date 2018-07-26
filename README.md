@@ -2,7 +2,7 @@
 
 ## Instruction
 
-***if you feel adventurous, don't worry, that is safe!***
+***Copy/paste to command line***
 
 - If you are on Mac click CMD + Space, type in Terminal and ENTER
 - Copy & paste and ENTER to the terminal this sequence
@@ -32,7 +32,7 @@ My approach was based on a few assumptions:
 
 ## To do
 - Complete styling of the app, calendar items
-- General clean up, class name, data file, removing borders
+- Move data from App.js to sepetate file and import into
 - Adding responsivness, fixed width to 1024px at the moment
 - Deploy to Heroku
 

@@ -1,28 +1,29 @@
+@import './variables.scss';
+
 .weekday_item {
-  border: 1px solid green;
+  border: 1px solid $basic;
   margin: 2px;
   width: 140px;
   height: 20px;
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: $fonts;
   padding-top: 2px;
   font-weight: bold;
+
 }
 
 .dot {
-  // display: flex;
-  // justify-content: center;
   align-self: center;
   height: 10px;
   width: 10px;
-  background-color: green;
+  background-color: $weekday;
   border-radius: 50%;
   display: inline-block;
 
   &--weekend {
-    background-color: orange;
+    background-color: $weekend;
   }
 }
 

@@ -1,12 +1,12 @@
 .weekday_item {
-  border: 1px solid green;
+  border: 1px solid #fff;
   margin: 2px;
   width: 140px;
   height: 20px;
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding-top: 2px;
   font-weight: bold; }
 

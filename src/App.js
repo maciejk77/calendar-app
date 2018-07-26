@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import Calendar from './components/calendar.js';
-//import fixed_data from './data/fixed_data.js';
-
+//import data from './data/fixed_data.js';
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = { 
-      // calendar: fixed_data.data.calendar,
-      // weekdays: fixed_data.data.weekdays,
-      // people: fixed_data.data.people
+      
       calendar: [ 
         {day: 28, event: 'PUBLIC', 
           people: [
@@ -130,7 +127,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{border: "2px dotted gray", padding: "2px", margin: "10px 0"}}>
+      <div>
         <Calendar 
           calendar={this.state.calendar}  
           weekdays={this.state.weekdays}
@@ -143,4 +140,5 @@ class App extends Component {
 export default App;
 
 
-
+// temp styling for <div> under return in render()
+// {/* style={{border: "2px dotted gray", padding: "2px", margin: "10px 0"}} /*}

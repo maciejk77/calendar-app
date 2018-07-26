@@ -1,52 +1,47 @@
+@import './variables.scss';
+
 .calendar_item {
-  border: 1px solid black;
+  border: 1px solid $theme-border;
   margin: 2px;
   width: 140px;
   height: 140px;
+  font-size: $font-size-base;
+  font-family: $fonts;
 
   &--highlighted {
-    border-color: greenyellow;  
+    border-color: $today;  
   }
 }
 
 .top-bar {
-  border: 2px dotted chocolate;
+  //border: 2px dotted chocolate;
   margin: 2px;
   display: flex;
   justify-content: space-between;
   padding: .1rem;
   height: 20px;
-
-  &__day {}
-
-  &__event {}
-
 }
 
 .bottom-box {
-  border: 2px dashed black;
+  //border: 2px dashed black;
   margin: 2px;
   padding: .1rem;
   margin: 5% auto; 
   font-weight: bold;
-  font-size: .9rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
 
   &__label {
-    z-index: 100;
-    //background-color: gray;
-    width: 30px;
+    font-size: $font-size-text;
+    width: 60px;
+    height: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    border: 1px solid red;
-    color: red;
   } 
 
-  &__finished {}
-
-  &__not-finished {
+  &__item {
     display: flex;
     margin-bottom: 5px;
   }
