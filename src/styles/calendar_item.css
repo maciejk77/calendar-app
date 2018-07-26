@@ -1,22 +1,23 @@
 .calendar_item {
-  border: 1px solid lightgray;
-  margin: 2px;
+  border: 1px solid azure;
   width: 140px;
   height: 140px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
-  .calendar_item--highlighted {
+  .calendar_item--today {
     border-color: lightgreen; }
 
 .top-bar {
-  margin: 2px;
+  border: 1px solid white;
   display: flex;
   justify-content: space-between;
-  padding: .1rem;
+  padding: .1rem .5rem;
   height: 20px; }
+  .top-bar--event {
+    border: 1px solid lightgreen;
+    color: lightgreen; }
 
 .bottom-box {
-  margin: 2px;
   padding: .1rem;
   margin: 5% auto;
   font-weight: bold;

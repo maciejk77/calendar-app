@@ -2,29 +2,34 @@
 
 .calendar_item {
   border: 1px solid $theme-border;
-  margin: 2px;
+  //margin: 2px;
   width: 140px;
   height: 140px;
   font-size: $font-size-base;
   font-family: $fonts;
 
-  &--highlighted {
-    border-color: $today;  
+  &--today {
+    border-color: $highlighted;  
   }
 }
 
 .top-bar {
-  //border: 2px dotted chocolate;
-  margin: 2px;
+  border: 1px solid white;
+  //margin: 2px;
   display: flex;
   justify-content: space-between;
-  padding: .1rem;
+  padding: .1rem .5rem;;
   height: 20px;
+
+  &--event {
+    border: 1px solid $highlighted;
+    color: $highlighted;  
+  }
 }
 
 .bottom-box {
   //border: 2px dashed black;
-  margin: 2px;
+  //margin: 2px;
   padding: .1rem;
   margin: 5% auto; 
   font-weight: bold;

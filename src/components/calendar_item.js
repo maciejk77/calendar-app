@@ -58,9 +58,9 @@ class CalendarItem extends Component {
 
   render() {
     return (   
-      <div className={ cn('calendar_item', {'calendar_item--highlighted': this.props.event === 'TODAY'} )}>
+      <div className={ cn('calendar_item', {'calendar_item--today': this.props.event === 'TODAY'} )}>
 
-        <div className="top-bar">
+        <div className={ cn('top-bar', {'top-bar--event': (this.props.event === 'PUBLIC' || this.props.event === 'C.HOLIDAY') })}>
           <div>{this.props.day}</div>
           <div>{this.props.event}</div>
         </div>
